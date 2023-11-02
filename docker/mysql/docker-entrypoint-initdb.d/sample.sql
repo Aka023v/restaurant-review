@@ -1,17 +1,16 @@
 SET CHARSET UTF8;
-CREATE DATABASE IF NOT EXISTS twitter DEFAULT CHARACTER SET utf8;
-USE twitter;
+CREATE DATABASE IF NOT EXISTS restaurant-review DEFAULT CHARACTER SET utf8;
+USE restaurant-review;
 
-CREATE TABLE IF NOT EXISTS `tweet`
+CREATE TABLE IF NOT EXISTS `review`
 (
   `id`       int(11) NOT NULL AUTO_INCREMENT,
   `poster`   varchar(255) NOT NULL,
-  `tweet`    text,
+  `restaurant_name`   varchar(255) NOT NULL,
+  `review`    text,
   PRIMARY KEY (`id`)
 );
 
-INSERT INTO `tweet`(`poster`, `tweet`) VALUES
-('さくら', '春が来た〜'),
-('もみじ', '秋が来た〜'),
-('あさがお', '夏が来た〜'),
-('つばき', '冬が来た〜');
+INSERT INTO `review`(`poster`, `restaurant_name`, `review`) VALUES
+('さくら', '焼肉 豚角', '食べ放題なのに美味しかった。'),
+('もみじ', '侍パスタ', '美味しいが、店員の態度があまりよくなかった。');
