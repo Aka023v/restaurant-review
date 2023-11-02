@@ -1,14 +1,18 @@
 <body> 
-    <h1>簡易Twitter</h1>
+    <h1>新規作成</h1>
     <form method="post" action="./store.php">
         <table>
             <tr>
                 <td>投稿者名</td>
-                <td><input name="poster" placeholder="投稿者名の記入欄" required></td>
+                <td><input name="poster" placeholder="投稿者名" required></td>
             </tr>
             <tr>
-                <td>投稿</td>
-                <td><textarea name="tweet" placeholder="ツイート記入欄" required></textarea></td>
+                <td>レストラン名</td>
+                <td><input name="restaurant_name" placeholder="レストラン名" required></td>
+            </tr>
+            <tr>
+                <td>レビュー</td>
+                <td><textarea name="review" placeholder="レビュー記入欄" required></textarea></td>
             </tr>
             <tr>
                 <td ></td>

@@ -1,6 +1,6 @@
 SET CHARSET UTF8;
-CREATE DATABASE IF NOT EXISTS restaurant-review DEFAULT CHARACTER SET utf8;
-USE restaurant-review;
+CREATE DATABASE IF NOT EXISTS restaurant_review DEFAULT CHARACTER SET utf8;
+USE restaurant_review;
 
 CREATE TABLE IF NOT EXISTS `review`
 (
